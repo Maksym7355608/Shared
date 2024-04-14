@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Mongo", "MaksiKo.Shared.Mongo\MaksiKo.Shared.Mongo.csproj", "{0EDFDADF-7504-4085-8981-DDE3E348B4A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Mongo", "src\MaksiKo.Shared.Mongo\MaksiKo.Shared.Mongo.csproj", "{0EDFDADF-7504-4085-8981-DDE3E348B4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Common", "MaksiKo.Shared.Common\MaksiKo.Shared.Common.csproj", "{0215D352-0580-49AC-9779-985E82328DD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Common", "src\MaksiKo.Shared.Common\MaksiKo.Shared.Common.csproj", "{0215D352-0580-49AC-9779-985E82328DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Application", "MaksiKo.Shared.Application\MaksiKo.Shared.Application.csproj", "{D7C67DED-587E-4EBA-B9B0-112470572ADE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Application", "src\MaksiKo.Shared.Application\MaksiKo.Shared.Application.csproj", "{D7C67DED-587E-4EBA-B9B0-112470572ADE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
