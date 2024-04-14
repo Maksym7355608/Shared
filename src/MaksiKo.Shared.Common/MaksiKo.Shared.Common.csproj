@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>MaksiKo.Shared.Common</Title>
+        <Authors>MaksiKo</Authors>
+        <Version>1.0.0</Version>
+        <FileVersion>1.0.0.0</FileVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <PackageVersion>1.0.0</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="EasyNetQ" Version="8.0.0-beta96" />
+      <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+      <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.5.1" />
+    </ItemGroup>
+
+</Project>

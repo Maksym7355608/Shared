@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Mongo", "MaksiKo.Shared.Mongo\MaksiKo.Shared.Mongo.csproj", "{0EDFDADF-7504-4085-8981-DDE3E348B4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Common", "MaksiKo.Shared.Common\MaksiKo.Shared.Common.csproj", "{0215D352-0580-49AC-9779-985E82328DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaksiKo.Shared.Application", "MaksiKo.Shared.Application\MaksiKo.Shared.Application.csproj", "{D7C67DED-587E-4EBA-B9B0-112470572ADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EDFDADF-7504-4085-8981-DDE3E348B4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDFDADF-7504-4085-8981-DDE3E348B4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDFDADF-7504-4085-8981-DDE3E348B4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDFDADF-7504-4085-8981-DDE3E348B4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0215D352-0580-49AC-9779-985E82328DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0215D352-0580-49AC-9779-985E82328DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0215D352-0580-49AC-9779-985E82328DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0215D352-0580-49AC-9779-985E82328DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C67DED-587E-4EBA-B9B0-112470572ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C67DED-587E-4EBA-B9B0-112470572ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C67DED-587E-4EBA-B9B0-112470572ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C67DED-587E-4EBA-B9B0-112470572ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

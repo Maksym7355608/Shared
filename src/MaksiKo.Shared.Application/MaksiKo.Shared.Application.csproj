@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>MaksiKo.Shared.Application</Title>
+        <Authors>MaksiKo</Authors>
+        <Version>1.0.0</Version>
+        <FileVersion>1.0.0.0</FileVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <PackageVersion>1.0.0</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="Serilog" Version="4.0.0-dev-02149" />
+      <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.1-dev-10389" />
+      <PackageReference Include="SerilogTimings" Version="3.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MaksiKo.Shared.Common\MaksiKo.Shared.Common.csproj" />
+      <ProjectReference Include="..\MaksiKo.Shared.Mongo\MaksiKo.Shared.Mongo.csproj" />
+    </ItemGroup>
+
+</Project>
