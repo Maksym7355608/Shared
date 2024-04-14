@@ -1,0 +1,57 @@
+name: Package Create & Publish
+
+on:
+  push:
+    branches: [ master ]
+
+
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install dependencies
+        run: dotnet restore MaksiKo.Shared.sln
+
+      - name: Build
+        run: dotnet build src/MaksiKo.Shared.Application/MaksiKo.Shared.Application.csproj --configuration Release --no-restore
+
+      - name: Build the NuGet package
+        run: dotnet pack src/MaksiKo.Shared.Application/MaksiKo.Shared.Application.csproj --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+        
+      - name: Build
+        run: dotnet build src/MaksiKo.Shared.Common/MaksiKo.Shared.Common.csproj --configuration Release --no-restore
+
+      - name: Build the NuGet package
+        run: dotnet pack src/MaksiKo.Shared.Common/MaksiKo.Shared.Common.csproj --configuration Release --output ${{env.DOTNET_ROOT}}\Package        
+        
+      - name: Build
+        run: dotnet build src/MaksiKo.Shared.Mongo/MaksiKo.Shared.Mongo.csproj --configuration Release --no-restore
+
+      - name: Build the NuGet package
+        run: dotnet pack src/MaksiKo.Shared.Mongo/MaksiKo.Shared.Mongo.csproj --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+
+      - name: Publish NuGet Package
+        run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.GIT_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
